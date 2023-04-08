@@ -3,6 +3,7 @@
 ## Exercise 1.1 Getting started
 
 ```bash
+$ docker ps -a
 CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                      PORTS     NAMES
 
 b5503e7e92bf   nginx     "/docker-entrypoint.…"   48 seconds ago       Exited (0) 19 seconds ago             compassionate_ellis
@@ -13,6 +14,17 @@ b5503e7e92bf   nginx     "/docker-entrypoint.…"   48 seconds ago       Exited 
 ```
 
 ## Exercise 1.2 Cleanup
+
+```bash
+
+$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+
+$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
+```
 
 ## Exercise 1.3 Secret message
 
