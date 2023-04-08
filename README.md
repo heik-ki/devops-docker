@@ -28,9 +28,15 @@ REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 
 ## Exercise 1.3: Secret message
 
-<code>docker run -d -it --name messenger devopsdockeruh/simple-web-service:ubuntu</code>
+```bash
+$ docker run -d -it --name messenger devopsdockeruh/simple-web-service:ubuntu
+
+$ docker exec -it messenger bash
+  # tail -f ./text.log
 
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+
+```
 
 ## Exercise 1.4: Missing dependencies
 
@@ -42,8 +48,8 @@ $ docker run -d --rm -it --name website ubuntu sh -c 'while true; do echo "Input
 
 ```bash
 $ docker exec -it website bash
-root@42d2bede8135:/# apt-get update
-root@42d2bede8135:/# apt-get -y install curl
+  # apt-get update
+  # apt-get -y install curl
 
 ```
 
@@ -60,4 +66,30 @@ Searching..
 </html>
 ```
 
+## Exercise 1.5: Sizes of images
 
+```bash
+
+$ docker pull devopsdockeruh/simple-web-service:ubuntu
+$ docker pull devopsdockeruh/simple-web-service:alpine
+
+```
+
+```bash
+
+$ docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago   15.7MB
+
+```
+
+The size of Ubuntu-based image is over five times larger than the size of Alpine-based image.
+
+```bash
+
+$ docker run -d -it --name alpineweb devopsdockeruh/simple-web-service:alpine
+  # tail -f ./text.log
+
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+```
