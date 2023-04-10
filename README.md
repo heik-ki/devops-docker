@@ -89,7 +89,20 @@ The size of Ubuntu-based image is over five times larger than the size of Alpine
 ```bash
 
 $ docker run -d -it --name alpineweb devopsdockeruh/simple-web-service:alpine
+$ docker exec -it alpineweb sh
   # tail -f ./text.log
 
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
 ```
+
+## Exercise 1.6: Hello Docker hub
+
+```bash
+
+$ docker run -it devopsdockeruh/pull_exercise
+
+```
+
+Password from https://hub.docker.com/r/devopsdockeruh/pull_exercise
+
+Secret message is: "This is the secret message"
