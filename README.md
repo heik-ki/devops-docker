@@ -111,6 +111,11 @@ Secret message is: "This is the secret message"
 
 [Dockerfile](/part1/Exercise-1_7/Dockerfile)
 
+
+## Exercise 1.8: Two line Dockerfile
+
+[Dockerfile](/part1/Exercise-1_8/Dockerfile)
+
 The command to run the container: 
 ```bash
 $ docker run web-server
