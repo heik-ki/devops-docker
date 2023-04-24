@@ -129,3 +129,10 @@ Commands:
 $ touch text.log
 $ docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
 ```
+## Exercise 1.10: Ports open
+
+```bash
+$ docker run -p 127.0.0.1:80:8080 web-server
+```
+In browser:
+http://127.0.0.1:80
