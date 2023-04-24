@@ -120,3 +120,12 @@ The command to run the container:
 ```bash
 $ docker run web-server
 ```
+
+## Exercise 1.9: Volumes
+
+Commands:
+
+```bash
+$ touch text.log
+$ docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+```
