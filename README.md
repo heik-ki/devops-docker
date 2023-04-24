@@ -110,3 +110,8 @@ Secret message is: "This is the secret message"
 ## Exercise 1.7: Image for script
 
 [Dockerfile](/part1/Exercise-1_7/Dockerfile)
+
+The command to run the container: 
+```bash
+$ docker run web-server
+```
