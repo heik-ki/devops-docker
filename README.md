@@ -140,3 +140,7 @@ http://127.0.0.1:8080
 ## Exercise 1.11: Spring
 
 [Dockerfile](/part1/Exercise-1_11/Dockerfile)
+
+## Exercise 1.12: Hello, frontend!
+
+[Dockerfile](/part1/Exercise-1_12/Dockerfile)
