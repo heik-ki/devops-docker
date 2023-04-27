@@ -144,3 +144,7 @@ http://127.0.0.1:8080
 ## Exercise 1.12: Hello, frontend!
 
 [Dockerfile](/part1/Exercise-1_12/Dockerfile)
+
+## Exercise 1.13: Hello, backend
+
+[Dockerfile](/part1/Exercise-1_13/Dockerfile)
