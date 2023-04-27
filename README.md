@@ -148,3 +148,9 @@ http://127.0.0.1:8080
 ## Exercise 1.13: Hello, backend
 
 [Dockerfile](/part1/Exercise-1_13/Dockerfile)
+
+Command used:
+
+```bash
+$ docker build . -t example-backend && docker run -p 8080:8080 example-backend
+```
