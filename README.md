@@ -135,7 +135,7 @@ $ docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-we
 $ docker run -p 8080:8080 web-server
 ```
 In browser:
-http://127.0.0.1:8080
+http://localhost:8080
 
 ## Exercise 1.11: Spring
 
@@ -145,7 +145,7 @@ http://127.0.0.1:8080
 
 [Dockerfile](/part1/Exercise-1_12/Dockerfile)
 
-## Exercise 1.13: Hello, backend
+## Exercise 1.13: Hello, backend!
 
 [Dockerfile](/part1/Exercise-1_13/Dockerfile)
 
